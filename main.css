@@ -131,6 +131,41 @@ html,
     background-color: hsl(12, 88%, 59%);
 }
 
+.container__final{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: hsl(13, 100%, 96%);}
+
+
+.button__final {
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items:  center;
+    justify-content:  center;
+    padding:  10px;
+    border:  0;
+}
+
+.footer_input {
+    border-radius: 25px;
+
+}
+
+.footer_buttonGO {
+    border-radius: 10px;
+}
+
+/* orion */
+.footer {
+    background-color: var(--darkBlue);
+}
+
+.footer__social {
+    display: flex;
+}
+
 @media (min-width: 750px) {
     .hero__imagen {
         width: 500px;
