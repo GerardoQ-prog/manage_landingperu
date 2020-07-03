@@ -1,10 +1,18 @@
+:root {
+    --brightRed: hsl(12, 88%, 59%);
+    --darkBlue: hsl(228, 39%, 23%);
+    --darkGrayishBlue: hsl(227, 12%, 61%);
+    --veryDarkBlue: hsl(233, 12%, 13%);
+    --veryPaleRed: hsl(13, 100%, 96%);
+    --varyLightGray: hsl(0, 0%, 98%);
+}
+
 body,
 html,
 * {
     padding: 0;
     margin: 0;
     font-family: 'Be Vietnam', sans-serif;
-    
 }
 
 .hero,
@@ -12,7 +20,6 @@ html,
     width: 100%;
     text-align: center;
     padding: 10px;
-    
 }
 
 .hero__imagen {
@@ -26,7 +33,6 @@ html,
     color: hsl(228, 39%, 23%);
     font-weight: 900;
 }
-
 
 .hero__subtitle,
 .different__subittle,
@@ -44,28 +50,29 @@ html,
     outline: none;
 }
 
-.card__title{
+.card__title {
     display: flex;
-    background: hsl(13, 100%, 96%);  
-    
+    background: hsl(13, 100%, 96%);
 }
-.card__titleinto{
+
+.card__titleinto {
     color: hsl(228, 39%, 23%);
     font-weight: 900;
     padding: 5px;
     font-size: 15px;
     display: flex;
-    align-items: center;  
-    
+    align-items: center;
 }
-.card__number{
+
+.card__number {
     width: 40px;
     border-radius: 20px;
     padding: 10px;
-    color:white;
-    background:  hsl(12, 88%, 59%);
+    color: white;
+    background: hsl(12, 88%, 59%);
 }
-.simplify{
+
+.simplify {
     font-size: 20p;
     text-align: center;
     color: white;
@@ -73,97 +80,146 @@ html,
     padding: 30px;
 }
 
-.simplify__button{
+.simplify__button {
     width: 100px;
     margin-top: 20px;
     background: white;
-    color:  hsl(12, 88%, 59%);
+    color: hsl(12, 88%, 59%);
     padding: 10px;
     border: 0;
     outline: none;
     border-radius: 20px;
 }
 
-
-.theySaid{
-   /* border: solid 1px red;*/
+.theySaid {
+    /* border: solid 1px red;*/
     text-align: center;
 }
 
-.slider{
+.slider {
     overflow: hidden;
 }
 
-.slider__inner{
+.slider__inner {
     white-space: nowrap;
     border: solid 1px blue;
     transition: transform 500ms;
     margin-bottom: 1rem;
 }
 
-.slider__item{
+.slider__item {
     display: inline-block;
     width: 100%;
     border: solid 1px green;
 }
 
-.slider__item-comment{
+.slider__item-comment {
     white-space: initial;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.slider__nav-list{
+.slider__nav-list {
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
-.slider__nav-li{
+.slider__nav-li {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     border: solid 1px hsl(12, 88%, 59%);
 }
 
-.slider__nav-li--selected{
+.slider__nav-li--selected {
     background-color: hsl(12, 88%, 59%);
 }
 
-.container__final{
+.container__final {
     display: flex;
     text-align: center;
+    align-items: center;
     justify-content: center;
-    background-color: hsl(13, 100%, 96%);}
+    flex-direction: column;
+    background-color: hsl(12, 88%, 59%);
+    padding: 50px 0px;
+}
 
+.container__final h1 {
+    color: white;
+    margin-bottom: 5px;
+}
 
 .button__final {
-    color: white;
+    background: white;
+    color: hsl(12, 79%, 63%);
     border-radius: 20px;
     display: flex;
-    align-items:  center;
-    justify-content:  center;
-    padding:  10px;
-    border:  0;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px 10px;
+    border: 0;
+    margin-top: 3px;
+    margin: 5px;
 }
+
+
+/* footer marco */
 
 .footer_input {
     border-radius: 25px;
-
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    font-family: Be Vietnam, sans-serif;
 }
 
 .footer_buttonGO {
-    border-radius: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    background: hsl(12, 88%, 59%);
+    color: white;
+    font-family: Be Vietnam, sans-serif;
 }
 
+.footer_table tr td {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    padding: 8px 30px 8px 30px;
+}
+
+
 /* orion */
+
 .footer {
     background-color: var(--darkBlue);
 }
 
 .footer__social {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1.8rem 0;
+}
+
+.footer__social-logo {
+    width: 100%;
+    text-align: center;
+}
+
+.footer__copy {
+    width: 100%;
+    color: var(--darkGrayishBlue);
+    text-align: center;
+    font-size: .8rem;
+    margin: 1.5rem 0;
 }
 
 @media (min-width: 750px) {
