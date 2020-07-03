@@ -90,10 +90,15 @@ html,
     text-align: center;
 }
 
+.slider{
+    overflow: hidden;
+}
+
 .slider__inner{
     white-space: nowrap;
     border: solid 1px blue;
-    overflow: hidden;
+    transition: transform 500ms;
+    margin-bottom: 1rem;
 }
 
 .slider__item{
@@ -104,18 +109,26 @@ html,
 
 .slider__item-comment{
     white-space: initial;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .slider__nav-list{
     display: flex;
-    justify-content: center;n
+    justify-content: center;
+    list-style: none;
 }
 
 .slider__nav-li{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: red;
+    border: solid 1px hsl(12, 88%, 59%);
+}
+
+.slider__nav-li--selected{
+    background-color: hsl(12, 88%, 59%);
 }
 
 @media (min-width: 750px) {
