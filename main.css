@@ -1,0 +1,125 @@
+body,
+html,
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Be Vietnam', sans-serif;
+    
+}
+
+.hero,
+.different {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.hero__imagen {
+    width: 350px;
+}
+
+.hero__title,
+.different__title {
+    font-size: 36px;
+    text-align: center;
+    color: hsl(228, 39%, 23%);
+    font-weight: 900;
+}
+
+
+.hero__subtitle,
+.different__subittle,
+.card__text {
+    color: hsl(0, 3%, 72%)
+}
+
+.hero__button {
+    width: 150px;
+    color: white;
+    background: hsl(12, 88%, 59%);
+    padding: 15px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+}
+
+.card__title{
+    display: flex;
+    background: hsl(13, 100%, 96%);  
+    
+}
+.card__titleinto{
+    color: hsl(228, 39%, 23%);
+    font-weight: 900;
+    padding: 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;  
+    
+}
+.card__number{
+    width: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    color:white;
+    background:  hsl(12, 88%, 59%);
+}
+.simplify{
+    font-size: 20p;
+    text-align: center;
+    color: white;
+    background: hsl(12, 88%, 59%);
+    padding: 30px;
+}
+
+.simplify__button{
+    width: 100px;
+    margin-top: 20px;
+    background: white;
+    color:  hsl(12, 88%, 59%);
+    padding: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+}
+
+
+.theySaid{
+   /* border: solid 1px red;*/
+    text-align: center;
+}
+
+.slider__inner{
+    white-space: nowrap;
+    border: solid 1px blue;
+    overflow: hidden;
+}
+
+.slider__item{
+    display: inline-block;
+    width: 100%;
+    border: solid 1px green;
+}
+
+.slider__item-comment{
+    white-space: initial;
+}
+
+.slider__nav-list{
+    display: flex;
+    justify-content: center;n
+}
+
+.slider__nav-li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+@media (min-width: 750px) {
+    .hero__imagen {
+        width: 500px;
+    }
+}
